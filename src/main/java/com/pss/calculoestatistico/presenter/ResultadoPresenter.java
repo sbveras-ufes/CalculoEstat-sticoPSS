@@ -23,20 +23,20 @@ import javax.swing.JOptionPane;
 public class ResultadoPresenter {
     private ResultadoView view ;
     private List<LocalDateTime> datas= new ArrayList<>();
-    private DadoInterface dados;
+    
 
-    public ResultadoPresenter(JFrame parent, DadoInterface entrada) {
-        this.dados=entrada;
+    public ResultadoPresenter(JFrame parent, DadoInterface dados) {
+        
         AtualizarTabela(dados);
-        view.getDataBox().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-             System.out.println(dados.getResultado());
-             view.popularTabela(dados.getResultado());
-             view.repaint();  
-              
-            }
-        });
+//        view.getDataBox().addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//             System.out.println(dados.getResultado());
+//             view.popularTabela(dados.getResultado());
+//             view.repaint();  
+//              
+//            }
+//        });
     
     }
     public void MostraResultados(){
@@ -48,7 +48,7 @@ public class ResultadoPresenter {
         }
     }
     public void AtualizarTabela(DadoInterface dados){
-        this.dados=dados;
+        
         view=new ResultadoView(null, false);
         
     for(Resultado x : dados.getResultado()){

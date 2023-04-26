@@ -32,7 +32,7 @@ public class MainView extends javax.swing.JFrame {
     public void popularTabela(ArrayList<Double> dados) {
     DefaultTableModel model = new DefaultTableModel((new String[] {"Valor"}), 0);
             
-//            (DefaultTableModel) jTable1.getModel();
+
     for (Double obj : dados) {
         model.addRow(new Object[]{obj});
     }

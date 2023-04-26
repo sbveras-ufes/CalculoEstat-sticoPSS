@@ -61,7 +61,7 @@ public class MainPresenter {
             if (dados.getDados().isEmpty()==false){
                 try {
             new CalculoEstatisticoService(dados);
-                    System.out.println(dados.getResultado());
+//                    System.out.println(dados.getResultado());
             if(resultadoPresenter==null){
             resultadoPresenter=new ResultadoPresenter(view, dados);}
             else {

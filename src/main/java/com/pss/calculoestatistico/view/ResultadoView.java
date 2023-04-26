@@ -31,12 +31,12 @@ public class ResultadoView extends javax.swing.JDialog {
     }
     
     public void popularTabela(ArrayList<Resultado> dados) {
-//        System.out.println(dados);
+
     DefaultTableModel model = new DefaultTableModel((new String[] {"Cálculo", "Valor"}), 0);
             
 //            (DefaultTableModel) jTable1.getModel();
     for (Resultado obj : dados) {
-        if(obj.getData().equals(DataBox.getSelectedItem()))
+//        if(obj.getData().equals(DataBox.getSelectedItem()))
         model.addRow(new Object[]{(obj.getNome()),(obj.getValor())});
     }
 //    model.addRow(new Object[]{("teste",random.NextDouble()))});
