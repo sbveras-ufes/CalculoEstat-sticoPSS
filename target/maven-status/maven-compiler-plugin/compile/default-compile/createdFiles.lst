@@ -1,0 +1,16 @@
+com\pss\calculoestatistico\model\CalculoEstatistico.class
+com\pss\calculoestatistico\model\Maior.class
+com\pss\calculoestatistico\model\Quantidade.class
+com\pss\calculoestatistico\model\Somatorio.class
+com\pss\calculoestatistico\model\DadosPeso.class
+com\pss\calculoestatistico\model\Menor.class
+com\pss\calculoestatistico\view\NewJFrame.class
+com\pss\calculoestatistico\model\Resultado.class
+com\pss\calculoestatistico\model\Variancia.class
+com\pss\calculoestatistico\view\NewJFrame$2.class
+com\pss\calculoestatistico\model\DadoInterface.class
+com\pss\calculoestatistico\model\DesvioPadrao.class
+com\pss\calculoestatistico\model\Principal.class
+com\pss\calculoestatistico\service\CalculoEstatisticoService.class
+com\pss\calculoestatistico\view\NewJFrame$1.class
+com\pss\calculoestatistico\model\Media.class
