@@ -4,10 +4,7 @@
  */
 package com.pss.calculoestatistico.view;
 
-import com.pss.calculoestatistico.model.DadoInterface;
-import com.pss.calculoestatistico.model.DadosPeso;
 import com.pss.calculoestatistico.model.Resultado;
-import static java.lang.Math.random;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;

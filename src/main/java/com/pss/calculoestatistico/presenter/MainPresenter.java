@@ -6,8 +6,6 @@ package com.pss.calculoestatistico.presenter;
 
 import com.pss.calculoestatistico.model.DadoInterface;
 import com.pss.calculoestatistico.model.DadosPeso;
-import com.pss.calculoestatistico.model.Resultado;
-import com.pss.calculoestatistico.service.LeitorService.LeitorAbstract;
 import com.pss.calculoestatistico.service.LeitorService.LeitorCSV;
 import com.pss.calculoestatistico.service.CalculoEstatísticoService.CalculoEstatisticoService;
 import com.pss.calculoestatistico.view.MainView;
@@ -15,10 +13,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileSystemView;
 import java.io.File;
-import java.io.FileReader;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 

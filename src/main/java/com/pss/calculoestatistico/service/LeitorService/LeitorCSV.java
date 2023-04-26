@@ -9,18 +9,14 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.filechooser.FileSystemView;
 
 /**
  *
  * @author UFES
  */
-public class LeitorCSV extends LeitorAbstract{
+public class LeitorCSV implements LeitorInterface{
     private FileNameExtensionFilter formato = new FileNameExtensionFilter("Arquivo CSV", "csv");
     private File caminho;
     ArrayList dados= new ArrayList<Double>();

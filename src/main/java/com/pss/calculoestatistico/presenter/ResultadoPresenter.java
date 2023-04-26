@@ -7,8 +7,6 @@ package com.pss.calculoestatistico.presenter;
 import com.pss.calculoestatistico.model.DadoInterface;
 import com.pss.calculoestatistico.model.Resultado;
 import com.pss.calculoestatistico.view.ResultadoView;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;

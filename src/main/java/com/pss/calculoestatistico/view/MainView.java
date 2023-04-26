@@ -4,11 +4,6 @@
  */
 package com.pss.calculoestatistico.view;
 
-import com.pss.calculoestatistico.model.DadoInterface;
-import com.pss.calculoestatistico.model.DadosPeso;
-import com.pss.calculoestatistico.service.LeitorService.LeitorCSV;
-import com.pss.calculoestatistico.presenter.MainPresenter;
-import com.pss.calculoestatistico.presenter.ResultadoPresenter;
 import java.util.ArrayList;
 import javax.swing.JMenuItem;
 import javax.swing.table.DefaultTableModel;
