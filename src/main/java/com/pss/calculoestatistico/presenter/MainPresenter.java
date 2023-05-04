@@ -36,6 +36,7 @@ public class MainPresenter {
     public MainPresenter() {
         view = new MainView();
         
+        
         view.getjMenuImportar().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -45,7 +46,7 @@ public class MainPresenter {
                 if (dados.getDados().isEmpty() == false){
                 System.out.println(dados.getDados());
                 view.popularTabela(dados.getDados());
-                view.repaint();}
+                }
                 
             }
             

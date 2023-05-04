@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JComboBox;
+import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -16,6 +17,7 @@ import javax.swing.table.DefaultTableModel;
  * @author UFES
  */
 public class ResultadoView extends javax.swing.JDialog {
+    DefaultTableModel model;
 
     /**
      * Creates new form ResultadoDialog
@@ -29,19 +31,25 @@ public class ResultadoView extends javax.swing.JDialog {
     
     public void popularTabela(ArrayList<Resultado> dados) {
 
-    DefaultTableModel model = new DefaultTableModel((new String[] {"Cálculo", "Valor"}), 0);
+    model = new DefaultTableModel((new String[] {"Cálculo", "Valor"}), 0);
             
 //            (DefaultTableModel) jTable1.getModel();
     for (Resultado obj : dados) {
-//        if(obj.getData().equals(DataBox.getSelectedItem()))
+//       if((obj.getData().toString()).equals(DataBox.getSelectedItem().toString()))
         model.addRow(new Object[]{(obj.getNome()),(obj.getValor())});
     }
 //    model.addRow(new Object[]{("teste",random.NextDouble()))});
     jTable1.setModel(model);
-    
+    jTable1.validate();
     jTable1.repaint();
     
+    
+    
 }
+
+    public JTable getjTable1() {
+        return jTable1;
+    }
     public void popularDataBox(List<LocalDateTime> datas) {
     
     for (LocalDateTime LocalDateTime : datas) {
@@ -158,45 +166,7 @@ public class ResultadoView extends javax.swing.JDialog {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ResultadoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ResultadoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ResultadoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ResultadoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
 
-        /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                ResultadoView dialog = new ResultadoView(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<LocalDateTime> DataBox;
